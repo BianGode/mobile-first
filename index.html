@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-first approach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./Assets/Logo.svg" alt="Logo">
+
+      <img class="hamburger" src="./Assets/hamburger.png" alt="">
+
+      <!-- Desktop  -->
+      <ul class="desktop-header-middle">
+        <li>Products</li>
+        <li>Challenges</li>
+        <li>Resources</li>
+        <li>Other Links</li>
+      </ul>
+
+      <div class="desktop-header-right">
+        <p>Sign in!</p>
+        <button class="btn">Try for free</button>
+      </div>
+    </header>
+    <ul class="mobile-dropdown">
+      <li class="products">Products</li>
+      <div class="products-dropdown">
+        <div class="products-dropdown-header">
+          <h3>Products</h3>
+          <img class="close" src="./Assets/Close.svg" alt="X">
+        </div>
+        <div class="products-dropdown-content">
+          <div class="dropdown-item">
+            <img src="../Assets/Spense_Icon.svg" alt="Spense_Icon">
+            <div class="dropdownInfo">
+              <p class="dropdownTitle">Spense</p>
+              <p class="dropdownContent">Spense is a landing page for writers. Great for practicing absolute
+                positioning and flex layouts.</p>
+            </div>
+          </div>
+          <div class="dropdown-item">
+            <img src="../Assets/Fiber_Icon.svg" alt="Fiber_Icon">
+            <div class="dropdownInfo">
+              <p class="dropdownTitle">Fiber Landing Page</p>
+              <p class="dropdownContent">An online portfolie generator. Great to practice flex/grid layouts, and
+                absolute positioning</p>
+            </div>
+          </div>
+          <div class="dropdown-item">
+            <img src="../Assets/Gradie_Icon.svg" alt="Gradie_Icon">
+            <div class="dropdownInfo">
+              <p class="dropdownTitle">Gradle Sign Up Page</p>
+              <p class="dropdownContent">Gradle is a simple sign up page, great to practice centering layouts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li>Challenges</li>
+      <li>Resources</li>
+      <li>Other Links</li>
+    </ul>
+    <div class="content">
+      <div>
+        <h1>Ondeck is your remote <span>conference calling tool</span></h1>
+        <p>Ondeck is a service that allows you to create beautiful, online, and encrypted video calls for you and your
+          remote team</p>
+        <button class="btn">Try for free</button>
+        <div class="content-rating">
+          <p>5.0 rating based on reviews from: </p>
+          <img src="./Assets/Capterra Logo.svg" alt="">
+          <img src="./Assets/AlternativeTo Logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Trusted by 3+ million people at companies like</p>
+      <div class="footerLogosDiv">
+        <div>
+          <img src="./Assets/Netflix Logo.svg" alt="Netflix Logo">
+          <img src="./Assets/Shopify Logo.svg" alt="Shopify Logo">
+        </div>
+        <div>
+          <img src="./Assets/Spotify Logo.svg" alt="Spotify Logo">
+          <img src="./Assets/Walmart Logo.svg" alt="Walmart Logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

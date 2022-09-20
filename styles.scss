@@ -1,0 +1,172 @@
+@font-face {
+    font-family: CuriosityBold;
+    src: url(../fonts/TTF/SKCuriosity-Bold.ttf);
+}
+@font-face {
+    font-family: Curiosity;
+    src: url(../fonts/TTF/SKCuriosity-Black.ttf);
+}
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+//Mobile first and then add the comlexity through desktop mediaqueries
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(243, 237, 229, 255);
+}
+
+// main parent container div
+.container {
+    width: 95%;
+    // border: 2px solid blue;
+    margin: 0 auto;
+    height: 100%;
+    // child elements margin
+    padding: 1rem;
+}
+
+// header and navbar styling
+header {
+    width: 100%;
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // hamburger icon size limit and styling
+    .hamburger {
+        height: 1.2rem;
+    }
+
+    // desktop li and sign in button default diplay none because it is mobile-first approach
+    .desktop-header-middle,
+    .desktop-header-right {
+        display: none;
+    }
+}
+
+// Dropdown hamburger menu
+.mobile-dropdown {
+    // margin: 0;
+    // display: none;
+    max-height: 0;
+    padding: 0;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #a8baa9;
+    li {
+        list-style: none;
+        padding: 1rem;
+        height: 0px;
+        display: none;
+    }
+    // products dropdown menu
+    .products-dropdown {
+        display: none;
+    }
+}
+// dropdown on
+.on {
+    max-height: 100%;
+    display: block;
+    transition: max-height 0.5s linear;
+    li {
+        display: block;
+        height: auto;
+        transition: height 1s ease;
+    }
+    // products dropdown menu
+    .products-dropdown {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 15px;
+        .products-dropdown-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .products-dropdown-content {
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .dropdown-item {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                .dropdownInfo {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// main content styling
+.content {
+  div {
+    h1 {
+        margin-bottom: 0;
+        span {
+            color: #f7b300;
+        }
+    }
+    p {
+        margin: 0.9rem 0;   
+    }
+    .content-rating {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      color: #656866;
+    }
+    .btn {
+        margin-bottom: 1rem;
+    }
+  }
+}
+
+// green button styling
+.btn {
+  padding: 1rem 1.75rem;
+  border: 0;
+  border-radius: 3px;
+  background-color: #143417;
+  color: white;
+  font-weight: 700;
+}
+
+// footer styling
+footer {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 20% auto 0 auto;
+  p {
+    font-size: 0.9rem;
+    color: #435349;
+  }
+  .footerLogosDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
