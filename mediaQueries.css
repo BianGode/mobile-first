@@ -1,0 +1,25 @@
+@media screen and (min-width: 992px) {
+  .content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  .content .contentLeft {
+    width: 70%;
+  }
+  .content .contentRight {
+    width: 30%;
+  }
+  .content div img {
+    max-width: 100%;
+  }
+  /* Footer styling */
+  footer {
+    text-align: center;
+  }
+  footer .footerLogosDiv {
+    margin: 0 auto;
+    flex-direction: row !important;
+  }
+}/*# sourceMappingURL=mediaQueries.css.map */

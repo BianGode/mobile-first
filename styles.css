@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
-@media screen and (min-width: 992px) {
-  body {
-    background-color: black;
-  }
-}
 @font-face {
   font-family: CuriosityBold;
   src: url(../fonts/TTF/SKCuriosity-Bold.ttf);
