@@ -97,6 +97,8 @@ header .desktop-header-right {
 
 .content div h1 {
   margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: 1000;
 }
 .content div h1 span {
   color: #f7b300;

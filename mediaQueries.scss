@@ -1,5 +1,10 @@
 // Desktop styling
 @media screen and (min-width: 992px) {
+  // header styling
+  header { 
+    padding: 2rem;
+  }
+
   // content styling
   .content {
     display: flex;
@@ -8,6 +13,10 @@
     margin-top: 10vh;
     .contentLeft {
       width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
     }
     .contentRight {
       width: 30%;
@@ -23,9 +32,17 @@
   /* Footer styling */
   footer {
     text-align: center;
+    margin-top: 4rem;
     .footerLogosDiv {
       margin: 0 auto;
       flex-direction: row !important;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .content {
+    .contentRight {
+      display: none;
     }
   }
 }

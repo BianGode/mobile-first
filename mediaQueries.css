@@ -1,4 +1,7 @@
 @media screen and (min-width: 992px) {
+  header {
+    padding: 2rem;
+  }
   .content {
     display: flex;
     width: 100%;
@@ -7,6 +10,10 @@
   }
   .content .contentLeft {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
   }
   .content .contentRight {
     width: 30%;
@@ -17,9 +24,15 @@
   /* Footer styling */
   footer {
     text-align: center;
+    margin-top: 4rem;
   }
   footer .footerLogosDiv {
     margin: 0 auto;
     flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content .contentRight {
+    display: none;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */
