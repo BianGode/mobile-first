@@ -1,12 +1,32 @@
 @media screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
   header {
     padding: 2rem;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .desktop-header-middle,
+header .desktop-header-right {
+    display: flex;
+    gap: 2rem;
+  }
+  header .desktop-header-middle {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header li {
+    list-style: none;
   }
   .content {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10vh;
+    gap: 2rem;
   }
   .content .contentLeft {
     width: 70%;
@@ -14,6 +34,9 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
+  }
+  .content .contentLeft h1 {
+    font-size: 4.5rem;
   }
   .content .contentRight {
     width: 30%;
@@ -32,6 +55,10 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .desktop-header-middle,
+.desktop-header-right {
+    display: none;
+  }
   .content .contentRight {
     display: none;
   }

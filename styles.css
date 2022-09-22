@@ -31,13 +31,40 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem 1rem;
 }
 header .hamburger {
   height: 1.2rem;
 }
-header .desktop-header-middle,
-header .desktop-header-right {
+header .products-dropdown {
+  position: relative;
+}
+header .desktop-products > div {
   display: none;
+}
+header .desktop-products > div .dropdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+header .desktop-products > div .dropdown-item .dropdownContent {
+  max-width: 100%;
+}
+header .desktop-products:hover > .products-dropdown {
+  max-width: 30%;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  margin: 1rem -4rem 0 -4rem;
+  border-radius: 15px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding: 1rem 4rem;
+}
+header .desktop-products:hover > .products-dropdown .dropdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .mobile-dropdown {
@@ -95,10 +122,13 @@ header .desktop-header-right {
   margin: 0;
 }
 
+.content {
+  margin: 4rem auto;
+}
 .content div h1 {
   margin-bottom: 0;
-  font-size: 4rem;
-  font-weight: 1000;
+  font-size: 2rem;
+  font-weight: 900;
 }
 .content div h1 span {
   color: #f7b300;
@@ -147,5 +177,5 @@ footer .footerLogosDiv div {
   gap: 2rem;
 }
 footer .footerLogosDiv img {
-  max-width: 100%;
+  max-width: 50%;
 }/*# sourceMappingURL=styles.css.map */

@@ -32,20 +32,51 @@ body {
 // header and navbar styling
 header {
     width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     max-height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem 1rem;
     // hamburger icon size limit and styling
     .hamburger {
         height: 1.2rem;
     }
 
-    // desktop li and sign in button default diplay none because it is mobile-first approach
-    .desktop-header-middle,
-    .desktop-header-right {
-        display: none;
+    .products-dropdown {
+        position: relative;
+        // padding-left: 10px;
+    }
+    // hide products dropdown for mobile 
+    .desktop-products > div {
+      display: none;
+      .dropdown-item {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        .dropdownContent {
+          max-width: 100%;
+        }
+      }
+    }
+    .desktop-products:hover > .products-dropdown{
+      max-width: 30%;
+      display: flex;
+      position: absolute;
+      background-color: white;
+      margin: 1rem -4rem 0 -4rem;
+      border-radius: 15px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding: 1rem 4rem;
+      .dropdown-item {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
     }
 }
 
@@ -113,11 +144,12 @@ header {
 
 // main content styling
 .content {
+  margin: 4rem auto;
   div {
     h1 {
         margin-bottom: 0;
-        font-size: 4rem;
-        font-weight: 1000;
+        font-size: 2rem;
+        font-weight: 900;
         span {
             color: #f7b300;
         }
@@ -168,7 +200,7 @@ footer {
         gap: 2rem;
     }
     img {
-      max-width: 100%;
+      max-width: 50%;
     }
   }
 }
