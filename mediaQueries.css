@@ -18,6 +18,9 @@ header .desktop-header-right {
     display: flex;
     justify-content: space-between;
   }
+  header .desktop-header-middle .products-dropdown {
+    display: none;
+  }
   header li {
     list-style: none;
   }
