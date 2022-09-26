@@ -76,6 +76,7 @@ header {
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        gap:0.5rem
       }
     }
 }
@@ -204,4 +205,8 @@ footer {
       max-width: 50%;
     }
   }
+}
+
+.dropdownTitle {
+  font-weight: 900;
 }
