@@ -65,4 +65,11 @@ header .desktop-header-right {
   .content .contentRight {
     display: none;
   }
+}
+@media screen and (max-width: 1200px) {
+  header .desktop-header-middle,
+header .desktop-header-right {
+    padding: 0;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=mediaQueries.css.map */

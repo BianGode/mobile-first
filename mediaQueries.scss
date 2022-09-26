@@ -1,5 +1,6 @@
 // Desktop styling
 @media screen and (min-width: 992px) {
+
   // container
   .container {
     width: 80%;
@@ -8,6 +9,7 @@
   // header styling
   header {
     padding: 2rem;
+
     .hamburger {
       display: none;
     }
@@ -18,14 +20,17 @@
       display: flex;
       gap: 2rem;
     }
+
     .desktop-header-middle {
       width: 40%;
       display: flex;
       justify-content: space-between;
+
       .products-dropdown {
         display: none;
       }
     }
+
     li {
       // text-decoration: none;
       list-style: none;
@@ -39,24 +44,30 @@
     justify-content: space-between;
     margin-top: 10vh;
     gap: 2rem;
+
     .contentLeft {
       width: 70%;
       display: flex;
       flex-direction: column;
       align-items: baseline;
       justify-content: center;
+
       h1 {
         font-size: 4.5rem;
         // max-width: 60%;
       }
+
       p {
         // max-width: %;
       }
     }
+
     .contentRight {
       width: 30%;
     }
+
     div {
+
       // max-width: 45vw;
       img {
         max-width: 100%;
@@ -68,13 +79,16 @@
   footer {
     text-align: center;
     margin-top: 4rem;
+
     .footerLogosDiv {
       margin: 0 auto;
       flex-direction: row !important;
     }
   }
 }
+
 @media screen and (max-width: 991px) {
+
   // desktop li and sign in button default diplay none because it is mobile-first approach
   .desktop-header-middle,
   .desktop-header-right {
@@ -84,6 +98,16 @@
   .content {
     .contentRight {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    .desktop-header-middle,
+    .desktop-header-right {
+      padding: 0;
+      gap: 1rem;
     }
   }
 }
